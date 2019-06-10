@@ -1,0 +1,45 @@
+{{>header}}
+	
+	<p>Ingrese los datos del estudiante</p>
+
+	<section style="align">
+		<h1>Formulario para inscribir un nuevo estudiante</h1>
+		<p>Ingrese los datos del nuevo estudiante</p>
+	</section>
+	<section >
+		<form action="/estudianteinscrito" method="post">
+			<table style="width:100%; text-align: left;" >
+				<tr class="formulario">
+					<th class="formulario">
+						<label>Documento de Identidad</label><br>
+						<input type="number" name="documento" required><br>
+					</th>
+
+					<th class="formulario">
+						<label>Correo Electrónico</label><br>
+						<input type="text" name="correo" required><br>
+					</th>
+				</tr>
+
+				<tr class="formulario">
+					<th class="formulario">
+						<label>Nombre</label><br>
+						<input type="text" name="nombre" required><br>
+					</th>
+					<th class="formulario">
+						<label>Telefono</label><br>
+						<input type="number" name="telefono" required><br>
+					</th>
+				</tr>
+
+			</table>
+			<p align="left"><label style="padding: 10px;">Cursos disponibles</label></p>
+			<p align="left"><select name="curso" style="width: 50%; margin: 10px;" required>
+							<option value="">-</option>
+							{{{MostrarSeleccionCursos}}}
+			</select></p><br>
+			<button >Enviar</button>
+		</form>
+	</section>
+
+{{>footer}}

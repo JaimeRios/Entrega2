@@ -1,0 +1,23 @@
+{{>header}}
+	
+
+	
+	{{{listarCursosDesplegables2}}}
+
+
+	<h1> Eliminar estudiante </h1>
+	<form action="/eliminarEstudiante" method="post">
+		<p align="left"><label style="padding: 10px;">documento del estudiante</label></p>
+		<p align="left"><input type="number" name="documento" style="width: 50%; margin: 10px;" required></p><br>
+
+		<p align="left"><label style="padding: 10px;">Cursos disponibles</label></p>
+		<p align="left"><select name="curso" style="width: 50%; margin: 10px;" required>
+			<option value="">-</option>
+			{{{MostrarSeleccionCursos}}}
+		</select></p><br>
+		<button>Eliminar</button>
+	</form>
+
+
+
+{{>footer}}

@@ -1,0 +1,24 @@
+{
+  "name": "entrega2_curso_nodejs",
+  "version": "1.0.0",
+  "description": "proyecto entrega2 curso nodejs",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hbs",
+    "nodejs",
+    "partials",
+    "helpers",
+    "express",
+    "body-parser"
+  ],
+  "author": "Jaime Alberto Rios Palacio jaimearios1986@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4"
+  }
+}

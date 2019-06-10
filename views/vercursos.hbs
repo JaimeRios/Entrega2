@@ -1,0 +1,20 @@
+{{>header}}
+	
+	<h1>Ver cursos como administrador </h1>
+	{{{listarCursos}}}
+
+	<h1> Actualizar estado de un curso </h1>
+	<form action="/actualizar" method="post">
+		<p align="left"><label style="padding: 10px;">Cursos disponibles</label></p>
+		<p align="left"><select name="curso" style="width: 50%; margin: 10px;" required>
+			<option>-</option>
+			{{{MostrarSeleccionCursos}}}
+		</select></p><br>
+		<button>Actualizar</button>
+	</form>
+
+
+	<h1>Ver cursos como interesado</h1>
+	{{{listarCursosDesplegables}}}
+
+{{>footer}}

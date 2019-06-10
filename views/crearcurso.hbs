@@ -1,0 +1,61 @@
+{{>header}}
+	
+	<section style="align">
+		<h1>Formulario para ingresar un nuevo curso</h1>
+		<p>Ingrese los datos del curso</p>
+	</section>
+	<section >
+		<form action="/cursoinscrito" method="post">
+			<table style="width:100%; text-align: left;" >
+				<tr class="formulario">
+					<th class="formulario">
+						<label>Id</label><br>
+						<input type="number" name="id" required><br>
+					</th>
+
+					<th class="formulario">
+						<label>Nombre</label><br>
+						<input type="text" name="nombre" required><br>
+					</th>
+				</tr>
+
+				<tr class="formulario">
+					<th class="formulario">
+						<label>Modalidad</label><br>
+						<select name="modalidad">
+							<option>-</option>
+							<option>Presencial</option>
+							<option>Virtual</option>
+						</select><br>
+					</th>
+					<th class="formulario">
+						<label>Valor</label><br>
+						<input type="number" name="valor" required><br>
+					</th>
+				</tr>
+
+				<tr class="formulario">
+					<th class="formulario">
+						<label>Descripción</label><br>
+						<textarea rows="5" cols="50" name="descripcion" required></textarea><br>
+					</th>
+
+					<th class="formulario">
+						<label>Intensidad horaria</label><br>
+						<input type="number" name="intensidad"><br>
+					</th>
+				</tr>
+				<tr class="formulario">
+					<th class="formulario">
+						<button>Enviar</button>
+					</th>
+				</tr>
+			</table>
+
+		</form>
+	</section>
+	
+
+
+
+{{>footer}}
